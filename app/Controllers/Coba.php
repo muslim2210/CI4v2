@@ -9,9 +9,4 @@ class Coba extends BaseController
         //return view('welcome_message');
         echo 'index coba';
     }
-
-    public function about()
-    {
-        echo "menggunakan base controller nama $this->nama";
-    }
 }
