@@ -13,7 +13,7 @@
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h5 class="card-title"><?= $komik['judul']; ?></h5>
+                            <h4 class="card-title"><?= $komik['judul']; ?></h4>
                             <p class="card-text">Penulis :<b> <?= $komik['penulis']; ?></b></p>
                             <p class="card-text"><b><?= $komik['penerbit']; ?></b> <small class="text-muted"></small></p>
                             <a href="" class="btn btn-warning">Edit</a>
