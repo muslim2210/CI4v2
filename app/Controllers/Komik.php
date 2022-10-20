@@ -21,7 +21,7 @@ class Komik extends BaseController
         $komik = $this->komikModel->findAll();
         $data = [
             'title' => 'Daftar Komik | Web CI4v2',
-            'komik' => $komik
+            'komik' => $this->komikModel->getKomik()
         ];
 
         //cara connect db tanpa model
@@ -37,5 +37,15 @@ class Komik extends BaseController
 
 
         return view('komik/index', $data);
+    }
+
+    public function detail($slug)
+    {
+
+        $data = [
+            'title' => 'Detail Komik',
+            'komik' => $this->komikModel->getKomik($slug)
+        ];
+        return view('komik/detail', $data);
     }
 }
