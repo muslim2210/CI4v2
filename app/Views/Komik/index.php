@@ -7,7 +7,7 @@
             <br>
 
             <h3>Daftar Komik</h3>
-
+            <a href="/komik/create" class="btn btn-primary mb-3">Tambah Data Komik</a>
             <div>
                 <table class="table">
                     <thead class="thead-dark">
