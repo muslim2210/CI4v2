@@ -38,7 +38,9 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Pages::index');
 
-$routes->get('/komik/(:segment)', 'Komik::detail/$1');
+$routes->get('/Komik/(:segment)', 'Komik::detail/$1');
+
+
 
 
 
