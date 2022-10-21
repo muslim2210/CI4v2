@@ -17,6 +17,14 @@
 
                 </div>
             <?php endif; ?>
+
+            <?php if (session()->getFlashdata('delete')) : ?>
+                <div class="alert alert-danger" role="alert">
+                    <p><?= session()->getFlashdata('delete'); ?></p>
+                    <hr>
+
+                </div>
+            <?php endif; ?>
             <div>
                 <table class="table">
                     <thead class="thead-dark">
