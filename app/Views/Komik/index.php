@@ -6,8 +6,17 @@
         <div class="col">
             <br>
 
-            <h3>Daftar Komik</h3>
             <a href="/komik/create" class="btn btn-primary mb-3">Tambah Data Komik</a>
+            <h3>Daftar Komik</h3>
+
+            <?php if (session()->getFlashdata('pesan')) : ?>
+                <div class="alert alert-success" role="alert">
+                    <h4 class="alert-heading">Berhasil!</h4>
+                    <p><?= session()->getFlashdata('pesan'); ?></p>
+                    <hr>
+
+                </div>
+            <?php endif; ?>
             <div>
                 <table class="table">
                     <thead class="thead-dark">

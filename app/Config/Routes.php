@@ -46,6 +46,8 @@ $routes->get('/Komik/(:segment)', 'komik::detail/$1');
 
 
 
+
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing
